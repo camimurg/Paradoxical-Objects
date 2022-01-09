@@ -6,3 +6,6 @@ This online exhibition is designed and developed by me, curated by [peertospace]
 I used the Three.js library for creating the starfield background.
 
 This is one of my first projects as a developer.
+
+
+![paradoxical-objects](https://user-images.githubusercontent.com/62030555/148696101-3a26349c-5efb-4d41-8c0b-b56314c2ecdb.gif)
