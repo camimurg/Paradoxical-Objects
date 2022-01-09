@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paradoxical Objects</title>
+    <meta name="description" content="Paradoxical Object:  video sculpture art from 1969 to today" />   
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/peertospace.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="javascript/peer_to_space.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <canvas id="c"></canvas>
+    <div class="main_container">
+      <div class="header">
+        <div class="navbar content__item">
+          <a href="http://www.peertospace.eu/" class="link link--helike" target="_blank">
+            <span>peer to space</span>
+          </a>
+        </div>
+      </div>
+      <!-- TITLE -->
+      <div class="title_container">
+        <div class="main_title">
+          <div class="glitch" data-text="Paradoxical Objects">
+            <span class="glitch color magenta">Paradoxical Objects</span>
+            <span class="glitch color blue">Paradoxical Objects</span>
+            <span class="glitch color ciano">Paradoxical Objects</span>
+            <span class="glitch main">Paradoxical Objects</span>
+            <span class="glitch line first"></span>
+            <span class="glitch line second"></span>
+          </div>
+        </div>
+        <div class="subtitle">
+          <div class="glitch" id="subtitle" data-text="Video Sculpture Art from 1969 to Today">
+            <span class="glitch color magenta">Video Sculpture Art from 1968 to Today</span>
+            <span class="glitch color blue">Video Sculpture Art from 1968 to Today</span>
+            <span class="glitch color ciano">Video Sculpture Art from 1968 to Today</span>
+            <span class="glitch main" >Video Sculpture Art from 1968 to Today</span>
+            <span class="glitch line first"></span>
+            <span class="glitch line second"></span>
+          </div>
+        </div>
+      </div>
+      <!-- Exhibition Informations -->
+      <div class="grid-container">
+        <div class="content info">
+            <h2>ABOUT THE EXHIBITION</h2>
+            <p>Curated by Sue Bachmeier and Peggy Schoenegge
+            <br>Presented by <a href="http://www.peertospace.eu/" target="_blank"><strong>peer to space</strong></a>
+            <br>Web Design by Camilla Murgia
+            <br>Date of launch: September 24, 2021</p>
+            <p>Screens dominate our everyday lives. Their use increased with new devices such as TVs, computers, laptops, smartphones, or tablets. On the flat surface, we access almost all aspects of our daily routine – we watch movies, read the latest news, communicate with friends, organize our work and experience art.</p>
+            <p>The screen has been an integral part of artistic practice since the late 1950s. At that time in contrast to today, the screen was not a flat but a bulky and heavy box. Expanded by the screen as object, video art was given a physical shape. The video works and the physical screen merge into one sculpture partly extended with additional artistic objects.</p>
+            <p>Peer to space’s exhibition <strong>PARADOXICAL OBJECTS</strong> is dedicated to this special construct that combines video and sculpture, embracing the temporality and dynamic of video and the static nature of the screen. Fourty-six time-based works by international artists from 1968 to today highlights the technological development and variety of artistic uses of video sculptures over the last decades. Whether closed-circuit, single or multi-channel, screens create a physical entity to display of moving images. The exhibition’s artists explore the possibilities and conditions of this disparate unity.</p>
+            <p>Exhibition title refers to the artist Joan Truckenbrod's publication The Paradoxical Object: Video Film Sculpture (2012), in which she analyzes the paradoxical state of video sculptures. In their hybrid form of the material and immaterial, physical and ephemeral, these works stretch the understanding of the definition of both sculpture and video art.</p>
+        </div>
+         <!-- LIST OF THE ARTISTS -->
+        <div class="content artist" id="content_artist">
+          <h2> THE ARTISTS</h2>
+          <div class="container_names">
+            <div class="artist_name">
+
+            <a href="#Moravec_Al-Ali">Matej Al-Ali &<br>Tomás Moravec</a>
+            <br><a href="#Anastasi">William Anastasi</a>
+            <br><a href="#VanDerAuwera">Emmanuel Van der Auwera</a>
+            <br><a href="#Bainbridge">Benton Bainbridge</a>
+            <br><a href="#Balve">Frank Balve</a>
+            <br><a href="#Barcia">Gabriel Barcia Colombo</a>
+            <br><a href="#Brewer">KS Brewer</a>
+            <br><a href="#Cannestra">Amy Cannestra</a>
+            <br><a href="#Chabrowski">Yvon Chabrowski</a>
+            <br><a href="#Connolly">James Connolly</a>
+            <br><a href="#Cooley">Kevin Cooley</a>
+            <br><a href="#Darilmaz">D’arcy Darilmaz</a>
+            <br><a href="#Ebert">Manja Ebert</a>
+            <br><a href="#Everett">Daniel Everett</a>
+            <br><a href="#Exonemo">Exonemo</a>
+            <br><a href="#Fake">Stefano Fake</a>
+            <br><a href="#Fieres">Ornella Fieres</a>
+            <br><a href="#Gannis">Carla Gannis</a>
+            <br><a href="#Hardy">James Alec Hardy</a>
+            <br><a href="#Hart">Claudia Hart</a>
+            <br><a href="#Holland">Faith Holland</a>
+            <br><a href="#Kau">Annebarbe Kau</a>
+            
+            <!-- SECOND PART -->
+            </div>
+            <div class="artist_name" id="right">
+            <a href="#Madorin">Philipp Madörin</a>
+            <br><a href="#Marck">Marck</a>
+            <br><a href="#May">Alex May</a>
+            <br><a href="#Menegon">Martina Menegon </a>
+            <br><a href="#Muller">Sali Muller </a>
+            <br><a href="#Obando">Juan Obando</a>
+            <br><a href="#Oursler">Tony Oursler</a>
+            <br><a href="#paikNam">Nam June Paik</a>
+            <br><a href="#Panzarino">Monica Panzarino</a>
+            <br><a href="#Park">Taezoo Park </a>
+            <br><a href="#Perborg">Björn Perborg</a>
+            <br><a href="#Radomsky">René Radomsky</a>
+            <br><a href="#Rodriguez">Allison Maria Rodriguez</a>
+            <br><a href="#Rosenbach">Ulrike Rosenbach</a>
+            <br><a href="#Sassoon">Nicolas Sassoon</a>
+            <br><a href="#Schneider">Ira Schneider</a>
+            <br><a href="#SidAndGeri">Sid and Geri</a>
+            <br><a href="#Thein">Ivonne Thein</a>
+            <br><a href="#Truckenbrod">Joan Truckenbrod</a>
+            <br><a href="#Vedder"> Maria Vedder</a>
+            <br><a href="#Vible">Andy Vible</a>
+            <br><a href="#Vostell">Wolf Vostell</a>
+            <br><a href="#Welz">Peter Welz</a>
+            <br><a href="#YeXuan">Xuan Ye</a>
+            <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container_exhibition">
+        <div class="title_exhibition">
+          <h1>THE EXHIBITION</h1>
+        </div>
+        <!-- Filters -->
+         <div class="filters">        
+            <button onclick="artworkFilter('data-az')" id="az" class="link link--helike">A-Z</button>
+            <button onclick="artworkFilterUpsideDown('data-single-to-multi')" id="multi-to-single" class="link link--helike">MULTI TO SINGLE</button>
+            <button onclick="artworkFilter('data-year')" id="earliest" class="filter link link--helike">EARLIEST-LATEST</button>
+            <button onclick="artworkFilter('data-curator-choice')" id="curator-choice" class="link link--helike">CURATOR'S CHOICE</button>
+            <button onclick="randomSelection()" id="randomly" class="link link--helike">RANDOM SELECTION</button>
+            <button onclick="artworkFilterUpsideDown('data-az')" id="za" class="link link--helike">Z-A</button>
+            <button onclick="artworkFilter('data-single-to-multi')" id="single-to-multi" class="link link--helike" >SINGLE TO MULTI</button>
+            <button onclick="artworkFilterUpsideDown('data-year')" id="latest" class="link link--helike"> LATEST-EARLIEST</button>
+        </div>
+
+        <!-- artworks section -->
+        <div class="video_section">
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="1" data-single-to-multi="46" data-az="31" data-year="2017">
+            <div class="artist-container" id="Park">
+              <p class="modal-trigger" onclick="modalOpen('Park-modal')">Taezoo Park, Digital Being: TV Being 006+009, 2017/2020</p>        
+                <div class="videoWrapper">
+                <iframe loading="lazy" src="https://www.youtube.com/embed/sc6dFTG4S1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>    
+          <div class="modal-wrapper" id="Park-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Park-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Park/01.jpg" alt="Park" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Park/02.jpg" alt="Park" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Park/03.jpg" alt="Park" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Park/04.jpg" alt="Park" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Taezoo Park, Digital Being: TV Being 006+009, 2017 - 2020, 7(W) x 6(H) x 7(D) ft, CRT TV Monitor, TV Mount, Pipe, Arduino, Raspberry Pi, and LED © the artist</h3>
+                  <p>Digital Being is a series of the media installations created from broken and discarded electronic devices. It is an unknown sentient creature born within the circuits of forgotten technology. This creature responds to its environment through an atypical movement or specific interaction according to the machinery that it dominates. “Digital Being: TV Being 006+009+Traffic Light”, a member of the digital being family, brings up philosophical questions, such as who am I and where do I come from, by displaying text, basic geometry, and a planet.taezoo</p>
+                  <br>
+                  <a href="https://www.taezoo.com" target="_blank">🔗 taezoo.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="2" data-single-to-multi="42" data-az="23" data-year="2018">
+            <div class="artist-container" id="May">
+              <p class="modal-trigger" onclick="modalOpen('May-modal')">Alex May, Flow State, 2018</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://www.youtube.com/embed/Bf2LXiJmiBs?title=0&byline=0&portrait=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="May-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('May-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/May_Alex/01.jpg" alt="May_Alex" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/May_Alex/02.jpg" alt="May_Alex" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/May_Alex/03.jpg" alt="May_Alex" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Alex May, Flow State, 2018, interactive digital video sculpture © the artist</h3>
+                  <p>Flow State is an interactive digital video sculpture that explores and reveals the inner workings of the Francis Crick Institute, the centre of genomic research in the UK. The sculpture is comprised of 28 synchronised video screens arranged in a physical structure inspired by the shape of an epigenetic diagram used to show the relationship between genomic samples. Developed over 18 months, it also alludes to the interconnectedness of the building and the people that work in it. On the reverse side, there is a meditative light installation based on the DNA sequence of a model yeast called Schizosaccharomyces pombe</p>
+                  <br>
+                  <a href="http://alexmayarts.co.uk" target="_blank">🔗 alexmayarts.co.uk</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+            data-curator-choice="3" data-single-to-multi="36" data-az="19" data-year="2015">
+            <div class="artist-container" id="Holland">
+              <p class="modal-trigger" onclick="modalOpen('Holland-modal')">Faith Holland, Analog Internet, 2015</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/138990653?h=5e2086f08b&loop=1&color=ff35bc&title=0&byline=0&portrait=0" frameborder="0" loop=1 autoplay=1 allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Holland-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Holland-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Holland/01.gif" alt="Holland" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Holland/02.jpg" alt="Holland" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3> Faith Holland, Analog Internet, 2015, three-dimensional rendered CRT televisions © the artist
+                  </h3>
+                  <p>Analog Internet is a video that reveals a pyramid of three-dimensional rendered CRT televisions, each with a different cat video appropriated from YouTube playing. Analog Internet IRL re-imagines having the same relationship to cat videos in physical, not digital, space; it is a sculptural re-imagining of the video version. Cat videos are displayed on physical screens, pyramidally towered. Analog Internet IRL was installed as part of Porn to Pizza curated by Tina Sauerlaender at DAM Gallery in Berlin.
+                  </p>
+                  <br>
+                  <a href="https://faithholland.com" target="_blank">🔗  faithholland.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="4" data-single-to-multi="8" data-az="4" data-year="2015">
+            <div class="artist-container" id="Barcia">
+              <p class="modal-trigger" onclick="modalOpen('Barcia-Colombo-modal')">Gabriel Barcia-Colombo, Tube II, 2015</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/69434456?title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Barcia-Colombo-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Barcia-Colombo-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" src="images/Barcia-Colombo/01.jpg" alt="Barcia-Colombo" height="auto">
+                </div>
+                <div class="content-details">
+                  <h3>Gabriel Barcia-Colombo, Tube II, 2015, video sculpture © the artist</h3>
+                  <p>Tube II is a video sculpture depicting a relationship trapped somewhere between the physical and digital world. The piece references the transition from analogue to digital TV as a metaphor for the fact that our relationships exist somewhere between real life and online. Tube II is a video sculpture that continually changes over time, breaking the static form of the screen.</p>
+                  <br>
+                  <a href="https://www.gabebc.com/tube-ii" target="_blank">🔗 gabebc.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="5" data-single-to-multi="22" data-az="38" data-year="2018">
+            <div class="artist-container" id="SidAndGeri">
+              <p class="modal-trigger" onclick="modalOpen('SidAndGeri-modal')">Sid and Geri, Unfortunate Anchises, 2018</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/383441837?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="SidAndGeri-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('SidAndGeri-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/SidandGeri/01.jpg" alt="SidandGeri" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/SidandGeri/02.jpg" alt="SidandGeri" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Sid and Geri, Unfortunate Anchises, 2018, video/audio installation, plaster, dimensions variable © the artists
+                  </h3>
+                  <p> Unfortunate Anchises is a plaster sculpture of a female body similar to Greek mythology with a smartphone placed on the top of the sculpture. The smartphone plays a video of the movement of a tongue. Along with a Plasma TV playing a 3D male showing the movement of his tongue. Both placed on a plastic column that is also similar to Classical order. Engaging the visual, sonic, and physical fields as a combined object, a reflection of youth culture, presenting a Generation Y zeitgeist of commodity anxiety and spiritual nihilism.</p>
+                  <br>
+                  <a href="https://sidandgeri.com" target="_blank">🔗  sidandgeri.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="6" data-single-to-multi="7" data-az="18" data-year="2007">
+            <div class="artist-container" id="Hart">
+              <p class="modal-trigger" onclick="modalOpen('Hart-modal')">Claudia Hart, The Seasons, 2007</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/388596788?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Hart-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Hart-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Hart/01.jpg" alt="Hart" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Hart/02.jpg" alt="Hart" max-width="100%" height="auto" style="display: none;">
+                  <video loading="lazy" class="slides" src="images/Hart/03.mp4" alt="Hart" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Hart/04.jpg" alt="Hart" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Hart/05.jpg" alt="Hart" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Claudia Hart, The Seasons, 2007, 11:30 min., loop for monumental monitor + projection © the artist</h3>
+                  <p>The Seasons portrays a room in which a slowly evolving sculptural figure gradually transforms. In this animated loop, a variety of visual, temporal and conceptual cycles are offset and overlaid so that their movement is obscured. All is in flux but time seems to stand still, as in life. In The Seasons, a seated woman in a pose of erotic abandon cycles clockwise on a rotating pedestal. As she cycles, she decomposes, a vine of roses surrounding her, blooming and then fading away. The room also revolves, though counter clockwise, while the animation camera pans back and forth. These movements function in counterpoint, to appear only on the edge of perception. Sound for the piece is of crumbling paper. The color scheme is white on white.</p>
+                  <br>
+                  <a href="http://claudiahart.com" target="_blank">🔗 claudiahart.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="7" data-single-to-multi="13" data-az="45" data-year="2015">
+            <div class="artist-container" id="Welz">
+              <p class="modal-trigger" onclick="modalOpen('Welz-modal')">Peter Welz, Portrait #3 [out-take | monica vitti | sculpture], 2015</p>
+              <video loading="lazy" src="images/Welz/video1.mp4" controls></video>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Welz-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Welz-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Welz/01.jpeg" alt="Welz" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Welz/03.jpg" alt="Welz" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Welz/04.jpeg" alt="Welz" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Peter Welz, Portrait #3 [out-take | monica vitti | sculpture], 2015, hybrid work between sculpture and video installation © the artist</h3>
+                  <p>The piece is dedicated to one of the major film director and best known for his “trilogy on modernity and its discontents”. Michelangelo Antonioni redefined the concept of narrative cinema producing enigmatic and intricate mood pieces favouring contemplation and focusing on image over story, as in Red Desert (1964). Antonioni’s first film in colour is a film about a woman trying to survive in the modern world of cultural neurosis and existential doubt. Renowned for its scenic design, the work largely takes place in industrial landscapes that have been interpreted as a correlative of the unease, alienation, and vivid perceptions of the main character, Giuliana (Monica Vitti). Peter Welz uses a classical 16 mm film projector with a looper to scale the whole apparatus into a sculptural device scaling the screen accordingly. The projected video sequence focuses on a very crucial moment of Red Desert, when Monica Vitti is asked to cry. It is the most vulnerable, private and powerless moment, and the very point where the fictional reality overlaps with the actual reality. During the filming Michelangelo Antonioni corrects the scene by walking into the frame twice and finally neglects this sensible moment in the final version, as it would have altered the whole outcome.</p>
+                  <br>
+                  <a href="https://peterwelz.com" target="_blank">🔗 peterwelz.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="8" data-single-to-multi="12" data-az="35" data-year="1978">
+            <div class="artist-container" id="Rosenbach">
+              <p class="modal-trigger" onclick="modalOpen('Rosenbach-modal')">Ulrike Rosenbach, Meine Macht ist meine Ohnmacht, 2010/1978</p>
+              <video loading="lazy" src="images/Rosenbach/video1.mp4" controls></video>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Rosenbach-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Rosenbach-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Rosenbach/02.jpeg" alt="Rosenbach" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Rosenbach/03.jpeg" alt="Rosenbach" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Rosenbach/04.jpeg" alt="Rosenbach" style="display: none;">
+                  <video loading="lazy" class="slides" src="images/Rosenbach/video1.mp4" alt="Rosenbach" style="display: none;">This video is not available</video>
+                  <video loading="lazy" class="slides" src="images/Rosenbach/video2.mp4" alt="Rosenbach" style="display: none;">This video is not available</video>
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Ulrike Rosenbach, Meine Macht ist meine Ohnmacht, 2010/1978, mixed media installation, b/w video, audio, 30 min © the artist</h3>
+                  <p>Ulrike Rosenbach's video works of the 1970s were closely related to her performances. Video camera and monitors became a sculptural component of complex live actions. The installation Meine Macht ist meine Ohnmacht combines the elements of an action from 1978 in the Kunstmuseum Düsseldorf. For three hours, the artist lay in a stretched net until she finally freed herself. Above her a mirror, below her a salt flat, at the windows negative photos of women from different cultures. Over loudspeakers, you could hear her breathing and whisper the word woman. Her video recording was shown as a negative alternating with a text by Herbert Marcuse on two monitors in the same room.</p>
+                  <br>
+                  <a href="http://ulrike-rosenbach.de" target="_blank">🔗 ulrike-rosenbach.de</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="9" data-single-to-multi="6" data-az="16" data-year="2021">
+            <div class="artist-container" id="Gannis" data-curator-choice="1">
+              <p class="modal-trigger" onclick="modalOpen('Gannis-modal')">Carla Gannis, The Origins of The Universe: Dimensioning, 2021</p>        
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/319214825?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Gannis-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Gannis-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Gannis/01.jpg" alt="Gannis" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Gannis/02.jpg" alt="Gannis" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Gannis/03.jpg" alt="Gannis" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Carla Gannis, The Origins of The Universe: Dimensioning, 2021, HD Video, 3 min 11 sec © the artist</h3>
+                  <p>"The Origins of The Universe: Dimensioning", is a video translation of a 3D-printed sculptural work produced by the artist, Carla Gannis. Both works reference Gustave Courbet’s “L’Origine du monde” and the contemporary fad of 3D printing sculptural holders for smartphones. In the video, Gannis presents the model in a turntable format. A turntable is a sequence of renderings that provide a 360 view of a three-dimensional virtual model. Common on stock 3D websites, they provide a complete view to visitors, to help them determine if they want to purchase the model or not.  Accompanying the video is an audio composition entitled "In a Kingdom Full of Planets." It is a poetry collaboration between the artist and the Masterpiece AI Poem generator in homage to the universe.</p>
+                  <br>
+                  <a href="https://carlagannis.com" target="_blank">🔗 carlagannis.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="10" data-single-to-multi="23" data-az="13" data-year="2019">
+            <div class="artist-container" id="Exonemo">
+              <p class="modal-trigger" onclick="modalOpen('Exonemo-modal')">Exonemo, The Kiss, 2019</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/353262445?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Exonemo-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Exonemo-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Exonemo/01.jpg" alt="Exonemo" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Exonemo/02.jpg" alt="Exonemo" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Exonemo/03.jpg" alt="Exonemo" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Exonemo, The Kiss, 2019, LCD monitors, 3D printed sculpture, wood, metal framework, media player, 2,5 x 2,5 x 3,7 m © the artists
+                  </h3>
+                  <p>Over the past ten-odd years, it has become a natural habit of sorts that we hold smartphones in our hands. Such devices have become objects that are so close to our bodies that they are now almost parts of it. Never before have we been moved as strongly as by the flood of information that spills over from their small screens, and that has introduced entirely new forms of meeting, passing and parting with others. This work was inspired by the question of what a monument would have to be like to function as a symbol of our age. While the sculpture of large hands itself is reminiscent of enlightening socialist monuments, the screens these hands hold up are facing each other to make it look as if the faces shown on them were kissing. However one may also see them as two separate images of people that just happened to have their eyes closed. The video footage was recorded during the open studio in Brooklyn, NY aiming to include diverse people from different races, genders, and ages. The fact that the hand sculpture is easy to copy and scale, as that part was created by outputting data using a 3-D printer, gives the sculpture a sort of lightness that is yet different from that of enlightening monuments, and thereby adds a notion of uncertainty to the things this work symbolizes.
+                  </p>
+                  <br>
+                  <a href="https://exonemo.com" target="_blank">🔗  exonemo.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="filtering left" data-aos="fade-right"
+            data-curator-choice="11" data-single-to-multi="1" data-az="27" data-year="2015">
+            <div class="artist-container" id="Obando">
+              <p class="modal-trigger" onclick="modalOpen('Obando-modal')">Juan Obando, A Bird Without A Song, 2015</p>
+              <video loading="lazy" src="images/Obando/video_low_res.mov" controls></video>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Obando-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Obando-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Obando/01.jpg" alt="Obando" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Obando/02.jpg" alt="Obando" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Obando/03.jpg" alt="Obando" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Juan Obando, A Bird Without A Song, 2015, vertical HD video, 4:54 min. LCD screen, MDF and plexiglass 18.25 x 37.5 x 4.25 inches © the artists
+                  </h3>
+                  <p>A Bird Without A Song is a video-sculpture in the form of an oversized mobile phone displaying a looping Tinder-profile animation. The video is a geolocated rendition of the song Nothing Compares 2 U by Prince in the voice of Sinead O’Connor, lip-synced by animating profile pictures of users in the vicinities of the Chapinero neighborhood in Bogotá (Colombia.) At once haunting and comedic, the piece encapsulates the ubiquity of packaged online presence and swipe-based romance in the 21st century while illustrating aesthetic trends within users Tinder pictures. Once uploaded, the value of these personal image packages deflates and becomes temporary within their primary hosting environments. Still, they produce a lasting impact on a larger scale as the mass accumulation of personal data strengthens the macro-economies of global tech, transforming the image into flowing capital.
+                  </p>
+                  <br>
+                  <a href="https://juanobando.com" target="_blank">🔗  juanobando.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="12" data-single-to-multi="38" data-az="11" data-year="2016">
+            <div class="artist-container" id="Ebert">
+              <p class="modal-trigger" onclick="modalOpen('Ebert-modal')">Manja Ebert, sleepingsquad, 2016</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/386947745?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Ebert-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Ebert-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Ebert/01.jpg" alt="Ebert" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Ebert/02.jpg" alt="Ebert" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Ebert/03.jpg" alt="Ebert" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Ebert/04.jpg" alt="Ebert" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Manja Ebert, sleepingsquad, 2016, multiscreen sculpture © the artist</h3>
+                  <p>The sculptural video installation sleepingsquad includes videos from the community platform younow.com, on which people are live streaming during their sleep. Perform life. Always on. Due to this motto of modern society the protagonists actively frame their selves to perform one of the last private, unconscious and unveiled act in modern society for the camera – their own sleep. Being arranged in a group of sleepers they offer an uncontrolled insight into their rooms and private life and the streams become a collective sleeping selfie.</p>
+                  <br>
+                  <a href="https://manjaebert.de" target="_blank">🔗 manjaebert.de</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="13" data-single-to-multi="3" data-az="32" data-year="2013">
+            <div class="artist-container" id="Perborg">
+              <p class="modal-trigger" onclick="modalOpen('Perborg-modal')">Björn Perborn, Tuto, 2013</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/404378510?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Perborg-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Perborg-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Perborg/01.jpg" alt="Perborg" max-width="100%" height="auto" style="display: block;">
+                </div>
+                <div class="content-details">
+                  <h3>Björn Perborn, Tuto, 2013, video installation, monitor, media player, bed, dimensions variable © the artist
+                  </h3>
+                  <p>Tuto is a video installation that consists of a video monitor on the pillow of a bed. It shows a video of a grown up man in a 1:1 scale, sleeping and thumb-sucking. The blankets in the video are the same as in the room. I have made two versions of this piece. Both were shown at open studio events, where the studios I had access to were equipped with beds. It was a way to have the artist present through a surprising solution that only the most curious visitors would discover. It was also an ironic way to present ”the artist at work”.</p>
+                  <br>
+                  <a href="https://bjornperborg.com" target="_blank">🔗  bjornperborg.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="14" data-single-to-multi="2" data-az="22" data-year="2015">
+            <div class="artist-container" id="Marck">
+              <p class="modal-trigger" onclick="modalOpen('Marck-modal')">Marck, Artist for Istanbul, 2015</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://www.youtube.com/embed/cdp_avBCIjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>        
+          <div class="modal-wrapper" id="Marck-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Marck-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Marck/01.jpg" alt="Marck" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Marck/02.jpg" alt="Marck" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Marck/03.jpg" alt="Marck" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Marck/04.jpg" alt="Marck" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Marck, Artist for Istanbul, 2015, LCD screens, iron, aluminium 160 cm, 20:00 min. movie loop © the artist</h3>
+                  <p>The overwhelming demand of an artist (in this video myself) to do justice to everyone, less the art enthusiast but more the gallery owner. Since the gallery owners live from art sales, just like the artist, they always front new artworks, so the air stays away, like when cold water is poured over you. The overwhelming part was that I had to do an exhibition in Istanbul, along with other simultaneous exhibitions in the USA. The artwork was one of them. It is now in a museum in Istanbul, Bozlu Art Project.</p>
+                  <br>
+                  <a href="https://marck.tv" target="_blank">🔗  marck.tv</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="15" data-single-to-multi="32" data-az="42" data-year="2000">
+            <div class="artist-container" id="Vedder">
+              <p  class="modal-trigger" onclick="modalOpen('vedder-modal')">Maria Vedder, NoSenses, 2000 to today</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/37677236?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="vedder-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('vedder-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Vedder/01.jpeg" alt="vedder" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Vedder/02.jpeg" alt="vedder" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Maria Vedder, NoSenses, 2000 to today, Work in progress, 3-channel video installation: 3 stacked tube monitors, 3 synchronizable video players, Digital animation, Loop 4:46 min, Black and white, No sound, Animation: Till Beckmann © the artist
+                  </h3>
+                  <p>For years, Maria Vedder has collected newspaper pictures of people who are covering the sensory organs – their mouths, eyes, or ears. They elude communication. In computer animation, over 700 photographs come together in an ever-accelerating vertical stream on the monitor column. If at the beginning a picture is quietly pushed from the following picture onto the next screen, at the end 36 photographs can be seen or guessed in one second. The speed and motion dissolve the individual image and give rise to new graphic elements. Newspaper picture grids and computer pixels become organic forms. The project is never-ending, because Maria Vedder will continue to constantly collect – unless someday there are no more printed newspapers.</p>
+                  <br>
+                  <a href="https://mariavedder.de" target="_blank">🔗  mariavedder.de</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="16" data-single-to-multi="9" data-az="7" data-year="2016">
+            <div class="artist-container" id="Chabrowski">
+              <p class="modal-trigger" onclick="modalOpen('Chabrowski-modal')">Yvon Chabrowski, TOUCHING THE IMAGES, 2016</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/278820374?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>    
+          <div class="modal-wrapper" id="Chabrowski-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Chabrowski-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Chabrowski/01.jpg" alt="Chabrowski" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Chabrowski/02.jpg" alt="Chabrowski" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Chabrowski/03.jpg" alt="Chabrowski" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Yvon Chabrowski, TOUCHING THE IMAGES, 2016, one channel video installation, HD-loop, 56:00 min, color, sound, 92 cm x 55 cm, life-size on a free hanging 40 inch monitor, 2017 © Yvon Chabrowski & VG Bildkunst, 2020</h3>
+                  <p>Floods of images and streams of sensory impressions inundate the spaces for thought in a society steeped in communication. In contact with the sensory interfaces of our devices, we develop a private, almost intimate, relationship to these devices, which in turn leads us to forget them and ultimately replace our perception of self. The resulting immersive proximity almost entirely supplants what was originally the communicative function of the media. Yvon Chabrowski’s work Touching the Images addresses precisely this sensory relationship between the medium and the user, and the associated ambivalence with respect to image production and sensory experience.</p>
+                  <br>
+                  <a href="http://chabrowski.info" target="_blank">🔗 chabrowski.info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="17" data-single-to-multi="24" data-az="6" data-year="2020">
+            <div class="artist-container" id="Cannestra">
+              <p class="modal-trigger" onclick="modalOpen('Cannestra-modal')">Amy Cannestra, ODB: Reaching, 2020</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://www.youtube.com/embed/C3TLR-FrmKE?title=0&byline=0&portrait=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Cannestra-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Cannestra-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Cannestra/01.jpg" alt="Cannestra" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Cannestra/02.jpg" alt="Cannestra" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Cannestra/03.jpg" alt="Cannestra" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Amy Cannestra, ODB: Reaching, 2020, sculpture, video © the artist</h3>
+                  <p>ODB: reaching is part of a sculpture, video, and drawing series called On a Daily Basis (or ODB); work that prods at stream of consciousness and the every day. Reaching explores the struggle for unattainable perfection, motivated by fleeting moments of self-love and self-hatred, and the search for a balance that doesn't exist between our self- image and our interpretation of others' expectations. We continue to reach for unattainable perfection because the alternative is a terrifying and unknown abyss. Reaching can distort who we are in order to meet our perception of others' expectations, motivated both by the fear that first impressions are made in seconds, and the bliss that comes from moments of pure self-esteem and confidence.</p>
+                  <br>
+                  <a href="https://amycannestra.com" target="_blank">🔗  amycannestra.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="18" data-single-to-multi="10" data-az="20" data-year="1994">
+            <div class="artist-container" id="Kau">
+              <p class="modal-trigger" onclick="modalOpen('Kau-modal')">Annebarbe Kau, Kinoki, 1994</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/429288403?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Kau-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Kau-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Kau/01.jpg" alt="Kau" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Kau/02.jpg" alt="Kau" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Kau/03.jpg" alt="Kau" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Kau/04.jpg" alt="Kau" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3> Annebarbe Kau, Kinoki, 1994, 6 monitors, 6 video tapes, 3 steel-bases and 3 hangers with orange ropes, video without sound Close-ups of six individual pairs of eyes © the artist. Photo in Bremen by Joachim Fliegner / Photo in Düsseldorf by W. Meyer</h3>
+                  <p>Kinoki, the title of the work from 1994, is an allusion to the style designation (KinoAuge) created by Dsiga Wertow, but this time in the inverse of the view. The viewer is looked at. The bases and the hanging of the monitors are specially made and give the virtual eyes an almost human physique.</p>
+                  <br>
+                  <a href="http://annebarbekau.de" target="_blank">🔗 annebarbekau.de</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="19" data-single-to-multi="31" data-az="30" data-year="2019">
+            <div class="artist-container" id="Panzarino">
+              <p class="modal-trigger" onclick="modalOpen('Panzarino-modal')">Monica Panzarino, Memory, 2019</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/310480518?h=8c929320b6&color=ec008c&title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Panzarino-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Panzarino-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Panzarino/01.jpg" alt="Panzarino" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Panzarino/02.jpg" alt="Panzarino" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Panzarino/03.jpg" alt="Panzarino" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Monica Panzarino, Memory, 2019, 4:12, SD video, provided courtesy of Vtape in Toronto (CAN) © the artist</h3>
+                  <p>In this video, Panzarino performs Barbra Streisand’s version of “Memory”, the 
+                    signature show tune from the musical “Cats.”  Panzarino’s voice is processed 
+                    by “The Nipulator 2.0”, a custom-built, wireless electronic bra created by the 
+                    artist that uses hardware potentiometers (or knobs), a hacked DJ Hero 
+                    microcontroller, and a Max/MSP software patch.  The left "nipple" of the bra 
+                    manipulates the frequency of her voice in real-time, while the right "nipple" 
+                    adds reverb.  In the background, we see VHS footage shot by Panzarino from 
+                    the World Trade Center observation deck in October 2000.  In "Memory", 
+                    Panzarino (who grew up in lower Manhattan) pays homage to the pre-9/11, 
+                    pre-internet culture New York City of her youth.</p>
+                  <br>
+                  <a href="https://monicapanzarino.art" target="_blank">🔗  monicapanzarino.art</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="20" data-single-to-multi="37" data-az="33" data-year="2017">
+            <div class="artist-container" id="Radomsky">
+              <p  class="modal-trigger" onclick="modalOpen('Radomsky-modal')">Rene Radomsky, Mydriasis, 2017</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/388957496?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Radomsky-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Radomsky-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Radomsky/01.png" alt="Radomsky" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Radomsky/02.jpg" alt="Radomsky" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Radomsky/03.jpg" alt="Radomsky" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3> Rene Radomsky, Mydriasis, 2017, 1-channel video, Hi8 video, 00:40 min (loop), monitor, media player, power adapter, cable © the artist"</h3>
+                  <p>In this work, I filmed my eyes while sitting in the darkness and playing around with the camera light of my old Mini-DV camcorder. I filmed the movement of my pupils after I had turned the light on and off again. The footage was then shoot multiple times and displayed on eight PAL-Screens. The idea for this video sculpture was an old video where I tried the camera the first time. Like the eye itself, the cameras aperture adjusts to the environment (if set to auto-mode).</p>
+                  <br>
+                  <a href="https://rdmsky.com" target="_blank">🔗  rdmsky.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="21" data-single-to-multi="11" data-az="39" data-year="2020">
+            <div class="artist-container" id="Thein">
+              <p class="modal-trigger" onclick="modalOpen('Thein-modal')">Ivonne Thein, How not to be seen as a body, 2020</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/388243497?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Thein-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Thein-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Thein/01.jpg" alt="Thein" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Thein/02.jpg" alt="Thein" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Thein/03.jpg" alt="Thein" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Ivonne Thein, How not to be seen as a body, 2020, 4K video loop with sound, 5:12 min © the artist</h3>
+                  <p>In our performance-oriented society, there is a growing tendency towards objectification, which encodes the body as an arbitrarily manipulable mass. We can do something with our body, shape it or manipulate it. Today it seems omnipresent, permeable and somehow surmountable, and increasingly resembles a set of possibilities. How not to be seen as a body is a mixed-media installation consisting of computer generated photographs, printed fabric, a carpet with photo print and a video sculpture. It questions the boundaries between real and artificial bodies, but does not open up new insights for the viewer, leaving him or her disoriented between body fragments.</p>
+                  <br>
+                  <a href="http://ivonnethein.art" target="_blank">🔗 ivonnethein.art</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="22" data-single-to-multi="23" data-az="13" data-year="2017">
+            <div class="artist-container" id="Oursler">
+              <p class="modal-trigger" onclick="modalOpen('Oursler-modal')">Tony Oursler, R_G_B_, 2017</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/392975526?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Oursler-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Exonemo-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Oursler/01.jpg" alt="Oursler" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Oursler/02.jpg" alt="Oursler" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Oursler/03.jpg" alt="Oursler" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Oursler/03.jpg" alt="Oursler" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Tony Oursler,  R_G_B_, 2017, Glass, led screen, audio, video, steel, acrylic, resin, led light and computer 200h x 40w / Head 37ø cm, TON004 © the artist</h3>
+                  <p>The chimerical bots relate to Oursler's ongoing interest in human interaction with technology and questions the intelligence of the AI-systems. The freestanding bots are juxtaposed with wall mounted flow charts, which combine digitally moving images, painting, and sound. These works are based on schematics depicting motivational and inspirational systems, cognitive behavioral therapy, programing, networking to form a nexus of human desire, folly, and machine logic. Artificial intelligence, or A.I., brings to light many questions regarding our coevolution with such systems. Most notably, will our creations replace us and become our final undoing? Or will we enter a utopian world of limitless knowledge and achievements? It is the artist’s perspective that in between these two questions, AI has begun to enter our world in many fascinating and banal ways which are open to speculation.</p>
+                  <br>
+                  <a href="https://tonyoursler.com" target="_blank">🔗  tonyoursler.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="23" data-single-to-multi="33" data-az="24" data-year="2018">
+            <div class="artist-container" id="Menegon">
+              <p class="modal-trigger" onclick="modalOpen('Menegon-modal')">Martina Menegon, familiar strangers, 2018-19</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://www.youtube.com/embed/gbEETDLS270" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Menegon-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Menegon-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Menegon/01.jpg" alt="Menegon" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Menegon/02.jpg" alt="Menegon" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Menegon/03.jpg" alt="Menegon" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Menegon/04.jpg" alt="Menegon" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Martina Menegon, familiar strangers, 2018-19, face filter / video installation © the artist</h3>
+                  <p> Familiar stranger (2018) is a face filter available for Instagram, Facebook, Snapchat and Snap Camera. When using the filter, the user’s face is swapped and hidden by a virtual mask, a 3D scanned self portrait of the artist that over-rules facial characteristics and expressions. The video installation "familiar strangers" (2019) displayed on tablets on stands the ongoing collection of video of users wearing the face filter, being all different yet all similar to each other: familiar strangers. The work investigates the concept of avatar as mask, of identity in a social media context and, even if face recognition is not the latest trend, of surveillance in today’s society.</p>
+                  <br>
+                  <a href="http://www.martinamenegon.com/" target="_blank">🔗 martinamenegon.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="24" data-single-to-multi="21" data-az="1" data-year="2019">
+            <div class="artist-container" id="Moravec_Al-Ali">
+              <p class="modal-trigger" onclick="modalOpen('Moravec_Al-Ali-modal')">Matej Al-Ali & Tomáš Moravec, Shift (Linz edition), 2019</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/388506679?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>    
+          <div class="modal-wrapper" id="Moravec_Al-Ali-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Moravec_Al-Ali-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Moravec_Ali/01.jpg" alt="Moravec_Al-Ali" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Moravec_Ali/02.jpg" alt="Moravec_Al-Ali" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Tomáš Moravec & Matej Al-Ali, Shift (Linz edition), 2019, Realized as part of Linz FMR 2019 festival. mobile video-sculpture, dimensions: 200x180x400 cm</h3>
+                  <p> Shift is a common project of Matej Al-Ali and Tomáš Moravec. It combines a moving video-sculpture and performance on predefined trajectory. A vehicle, carrying two video projections on the end faces is operated by performers and moves back and forth following a straight track. Video-projections are interconnected with the physical movement of a vehicle. Performers are leading trajectory in both realms - reality and virtual space of video at the same time. Thus the movement is present in both forms - physical and digital. While the vehicle is put into motion projections reveal a virtual space. The vehicle with its pendular trajectory slowly moves between start and end position. This physical interval corresponds with a virtual length of a video timeline. The “Shift” project works with the term “moving image” literally. For visitors are encouraged to follow the vehicle in order to see the full length of the moving image along its trajectory at Linz FMR festival.</p>
+                  <br>
+                  <a href="http://tomasmoravec.cz" target="_blank">🔗 tomasmoravec.cz</a>
+                  <br>
+                  <a href="http://alali.cz" target="_blank">🔗 alali.cz</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="25" data-single-to-multi="39" data-az="37" data-year="1969">
+            <div class="artist-container" id="Schneider">
+              <p  class="modal-trigger" onclick="modalOpen('Schneider-modal')">Ira Schneider, Wipe Cycle, 1969</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/340908677?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Schneider-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Schneider-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Schneider/01.jpg" alt="Schneider" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Schneider/02.jpg" alt="Schneider" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Schneider/03.jpg" alt="Schneider" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Ira Schneider, Wipe Cycle, 1969, video documentation, video installation © the artist and Frank Gilette</h3>
+                  <p> Wipe Cycle transposes present-time demands as a way to disrupt television's one-sided flow of information. In the exhibition TV as a Creative Medium, the installation was constructed across from the elevators. So each visitor was immediately confronted with his or her own image. But the monitors also showed two videotapes and a television program. The installation, which made visitors a part of the information, was rigged in a highly complicated fashion: in four cycles, images wandered from one monitor to the other delayed by eight or sixteen seconds, while counter-clockwise a black light impulse wiped out all the images every two seconds from one to the next screen.</p>
+                  <br>
+                  <a href="https://ira-schneider.com" target="_blank">🔗  ira-schneider.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="26" data-single-to-multi="5" data-az="5" data-year="2018">
+            <div class="artist-container" id="Brewer">
+              <p  class="modal-trigger" onclick="modalOpen('Brewer-modal')">KS Brewer, Their Image Over You, 2018</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/605022712?h=b247339cca&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Brewer-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Brewer-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Brewer/01.jpg" alt="Brewer" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Brewer/02.jpg" alt="Brewer" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Brewer/03.jpg" alt="Brewer" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>KS Brewer, Their Image Over You, 2018, 78 x 31.5 x 8 in, wood, acrylic, hardware, paint, hydrocal, combustion, tv monitors, camcorders, cables © the artist</h3>
+                  <p>Two identical, scorched vanities face each other across a distance. As you approach each mirror, you see a live video feed of the back of your head, creating an infinite, fractal-like series of distorted reflections. This surreal rift between expectation and perception makes for a dissociative interaction between viewer and object, as well as a vulnerable one - as you try to see yourself, the furniture constantly surveils you from behind your back. Part of the immersive, interactive installation: Doubled Up in Your Image (2018)</p>
+                  <br>
+                  <a href="https://ksbrewer.com" target="_blank">🔗 ksbrewer.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+            data-curator-choice="27" data-single-to-multi="4" data-az="43" data-year="2011">
+            <div class="artist-container" id="Vible">
+              <figure style="width: 80%;">
+                <p class="modal-trigger" onclick="modalOpen('Vible-modal')">Andy Vible, Watching Television, 2011</p>
+                <img loading="lazy" src="images/Vible/02.jpg" width="500px" alt="Vible">
+              </figure>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Vible-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Vible-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Vible/01.jpg" alt="Vible" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Vible/02.jpg" alt="Vible" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Andy Vible, Watching Television, 2011, life-size sculpture of human body, video camera, television © the artist</h3>
+                  <p> Andy Vible makes life-size sculptures of human bodies whose heads have been replaced by everyday objects. These objects determine the activities the bodies are engaged in.  In the case of Watching Television, the figure's head has been replaced by a video camera that is plugged into a TV directly in front of the figure.  This causes the TV screen to endlessly display a live feed of itself into a vanishing point.  This continuous repetition alters the meaning of the screen itself, which begs the question, what channel is he watching?</p>
+                  <br>
+                  <a href="http://andyvible.com" target="_blank">🔗  andyvible.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="28" data-single-to-multi="19" data-az="1" data-year="1968">
+            <div class="artist-container" id="Anastasi">
+              <p class="modal-trigger" onclick="modalOpen('Anastasi-modal')">William Anastasi, Free Will, 1968/2019</p>
+              <img loading="lazy" src="images/Anastasi/01.jpg" alt="Anastasi">
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Anastasi-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Anastasi-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Anastasi/01.jpg" alt="Anastasi" max-width="100%" height="auto" style="display: block;">
+                </div>
+                <div class="content-details">
+                  <h3>William Anastasi, Free Will, 1968/2019, video camera, monitor, Thomas Rehbein Galerie, 2019 © Thomas Rehbein Galerie, Foto: Simon Vogel</h3>
+                  <p> In Free Will (1968) a self-referential cycle is found. A video camera is mounted on a television monitor and aimed at a corner of the room, which records the corner. The resulting image is transmitted on the TV monitor. The immediately perceived spatial reality is further experienced on a representation level, so that a duplication ensues: one sees in the screen the image of the corner one would see without the screen standing on the same spot. For Anastasi, representation is exempt from any romantic notion of art, but involves reiterating the simplest or the “dumbest” that can be reproduced. It does not describe or refer to anything situated beyond itself. In these closed systems of self-sameness and repetition - the title “Free Will” proves to be an ironic commentary on tautological inevitability and the lack of open, or free, interpretation - the distinction between image and extra-pictorial reality dissolve, just as language and extra-verbal reference coincide.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="29" data-single-to-multi="20" data-az="21" data-year="2010">
+            <div class="artist-container" id="Madorin">
+              <p class="modal-trigger" onclick="modalOpen('Madorin-modal')">Philipp Madörin, ReTube, 2010</p>        
+                <img loading="lazy" class="slides" src="images/Madorin/03.jpg" alt="Madorin">            
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Madorin-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Madorin-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Madorin/01.jpg" alt="Madorin" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Madorin/02.jpg" alt="Madorin" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Madorin/03.jpg" alt="Madorin" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Madorin/04.jpg" alt="Madorin" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Madorin/05.jpg" alt="Madorin" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Philipp Madörin, ReTube, 2010, b/w CRT monitor and vidicon camera, computer © the artist</h3>
+                  <p>ReTube plays with the "tube" part of the name YouTube, which is a reference to the cathode ray tube (CRT) found in early electronic monitors. As CRT TV and monitors are practically a thing of the past, it seems strange to see an internet portal use this term in its name. The "ReTube" project consists of presenting YouTube clips on an old black and white CRT monitor, then using a CRT camera to film these screenings before ultimately uploading the results back on YouTube  The original YouTube clip is no longer the same. Distortions caused by the tube-technology, visitors’ interactions and the surrounding lighting effects give rise to new visual content.</p>
+                  <br>
+                  <a href="https://philippmadoerin.ch" target="_blank">🔗 philippmadoerin.ch</a>
+                  <br>
+                  <a href=" https://www.youtube.com/user/ReTube2010">🔗 www.youtube.com/user/ReTube2010</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="30" data-single-to-multi="17" data-az="8" data-year="2020">
+            <div class="artist-container" id="Connolly">
+              <p class="modal-trigger" onclick="modalOpen('Connolly-modal')">James Connolly, Phasing the Electromagnetic Flux of Another Shit Moment, February 4, 2020</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/391420915?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Connolly-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Connolly-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Connolly/01.jpg" alt="Connolly" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Connolly/02.jpg" alt="Connolly" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Connolly/03.jpg" alt="Connolly" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>James Connolly, Phasing the Electromagnetic Flux of Another Shit Moment, February 4, 2020, Digital video, 1080p, 5:41 min © the artist</h3>
+                  <p>Phasing The Electromagnetic Flux of Another Shit Moment, February 4, 2020 documents the very first studio experiments of a new four channel phase-controlled electromagnetic cathode ray tube hack. Using video of anti-intellectual racist Rush Limbaugh receiving the presidential medal of honor at Donald Trump’s 2020 state of the union, sequentially phased simple and complex low frequency waveforms are sent to four handmade electromagnets surrounding the electron guns of a VGA computer monitor. Mixing the video feed with electronic and electromagnetic noise and visuals, a shit spectacle is impotently but cathartically processed and disrupted.</p>
+                  <br>
+                  <a href="http://jameshconnolly.com" target="_blank">🔗 jameshconnolly.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="31" data-single-to-multi="28" data-az="17" data-year="2019">
+            <div class="artist-container" id="Hardy">
+              <p class="modal-trigger" onclick="modalOpen('Hardy-modal')">James Alec Hardy, 190711, 2019</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/388474957?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>        
+          <div class="modal-wrapper" id="Hardy-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Hardy-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Hardy/01.jpg" alt="Hardy" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Hardy/02.jpg" alt="Hardy" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>James Alec Hardy, 190711, 2019, screens in hammocks, wood, sound system © the artist</h3>
+                  <p>190711 was commissioned for the opening of the Sweet Harmony: Rave Today exhibition at the Saatchi Gallery in 2019. The installation consisted of a live performance made on the opening event, using manipulated analogue video feedback, mixed with audio feedback, with the output displayed on the screens in the hammocks, and via a huge valve amplifier sound system. The VHS recording of the performance was transferred to digital video format and then replayed through the screens in hammocks from the following day for the remaining 2 months of the exhibition. A full wall sized video projection at one end of the gallery- where the chain of hammocks originates from show a 45 minute long extract of a survey of woodland spaces, depicting central trees carved with initials, and field recorded sounds of the woodland spaces.</p>
+                  <br>
+                  <a href="https://jamesalechardy.com" target="_blank">🔗 jamesalechardy.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="32" data-single-to-multi="16" data-az="36" data-year="2019">
+            <div class="artist-container" id="Sassoon">
+              <p class="modal-trigger" onclick="modalOpen('Sassoon-modal')">Nicolas Sassoon, The Prophets, 2019</p>
+              <video loading="lazy" src="images/Sassoon/video1.mp4" controls></video>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Sassoon-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Sassoon-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Sassoon/01.jpg" alt="Sassoon" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Sassoon/02.jpg" alt="Sassoon" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Sassoon/03.jpg" alt="Sassoon" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Sassoon/04.jpg" alt="Sassoon" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Nicolas Sassoon, The Prophets, 2019, digital animation, lava rocks, LCD panels, media players, controllers, aluminum profiles, ABS, rubber, dimensions variables © the artist</h3>
+                  <p>The Prophets is an ongoing series of sculptures as poetic interfaces between computer technology and geological forces. Composed of small pumice boulders (volcanic rock) connected to LCD panels, the sculptures recall traditional viewing stones (Gongshi, Suiseki) from which electronic hardware and screens emerge to form heads and figures. The LCD screens feature pixelated animations evocative of flowing lava, suggesting a magmatic life silently contained within the stones. In The Prophets, technology becomes a vessel through which inert rocks appear to express another state of existence - a volcanic unrest hinting back at their chaotic origins. The sculptures bring about a singular experience, recounting a partial history of our relation with matter — a speculative geology of our digital condition rooted in volcanological processes, and speaking to the connections between organic and inorganic materials.</p>
+                  <br>
+                  <a href="https://nicolassassoon.com" target="_blank">🔗  nicolassassoon.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="33" data-single-to-multi="18" data-az="46" data-year="2019">
+            <div class="artist-container" id="YeXuan" data-curator-choice="1">
+              <p class="modal-trigger" onclick="modalOpen('YeXuan-modal')">Xuan Ye, ERROAR!#4 The Oral Logic I, 2019</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/329374154?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>    
+          <div class="modal-wrapper" id="YeXuan-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('YeXuan-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Ye_Xuan/01.jpg" alt="YeXuan" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Ye_Xuan/02.jpg" alt="YeXuan" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Ye_Xuan/03.jpg" alt="YeXuan" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Ye_Xuan/04.jpg" alt="YeXuan" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Xuan Ye, ERROAR!#4 The Oral Logic I, 2019, single-channel HD video(3’25”, sound), interactive web-based application, laser-engraved mirror, 3D prints, generative poetry on paper scroll, algorithmic composition (in collaboration with Jason Doell)</h3>
+                  <p>The ERROAR! Series speaks to the errant and noise that emerge from experiments of intelligence agents for understanding human’s cognitive functions through artificial neural networks, and how these technological errors open up new creative potentials that in return reconfigure our perceptions, affect and imaginations. Most visual-textual-sonic materials involved are generated from the process in which artist uses open data in various formats to train prevalent machine learning algorithms such as RNN and CNN. ERROAR!#4 The Oral Logic I contemplates on the phenomenon of "cannibalism" as a metaphor for cultural and technological assimilation, especially in the process of human-artificial-intelligence coupling.</p>
+                  <br>
+                  <a href="https://a.pureapparat.us" target="_blank">🔗 a.pureapparat.us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="34" data-single-to-multi="34" data-az="41" data-year="2019">
+            <div class="artist-container" id="VanDerAuwera">
+              <p class="modal-trigger" onclick="modalOpen('VanDerAuwera-modal')">Emmanuel Van der Auwera, VideoSculpture XX (The World's 6th Sense), 2019</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/374631345?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>    
+          <div class="modal-wrapper" id="VanDerAuwera-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('VanDerAuwera-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/VanderAuwera/01.jpg" alt="VanDerAuwera" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/VanderAuwera/02.jpg" alt="VanDerAuwera" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/VanderAuwera/03.jpg" alt="VanDerAuwera" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Emmanuel Van der Auwera, VideoSculpture XX (The World's 6th Sense), 2019, 4 x 46 inch LCD screens, 2 x 55 inch LCD screens, 10 tripods with custom plexiglass, HD video, dimensions variable, installation view, Solo booth, Harlan Levey Projects, Art Brussels 2019 © the artist & Harlan Levey Projects</h3>
+                  <p>TAdvertised as the world’s ‘sixth sense’, thermal imaging offers precise surveillance for a range of uses – firefighting, navigation, safety and law enforcement, pest control, and medical diagnostics. Used for field demonstrations filmed to market the latest technology to military contractors, the footage in VideoSculpture XX (The World’s 6th Sense) flaunts a thermographic camera’s skills at capturing detail and range – yet paints a phantasmal portrait of the Las Vegas Strip, drained of its color and camp. Van der Auwera’s VideoSculpture XX emerges as both an image and image-hunter, surveying from the sniper tower.</p>
+                  <br>
+                  <a href="https://hl-projects.com" target="_blank">🔗 hl-projects.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="zoom-in-up"
+          data-curator-choice="35" data-single-to-multi="35" data-az="29" data-year="1989">
+            <div class="artist-container" id="paikNam">
+              <p class="modal-trigger" data-modal-id="paikNam-modal" onclick="modalOpen('paikNam-modal')">Nam June Paik, Canopus, 1989</p>
+              <img loading="lazy" src="images/Paik_Nam/01.jpg" alt="paikNam">
+            </div>
+          </div>
+          <div class="modal-wrapper" id="paikNam-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('paikNam-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" src="images/Paik_Nam/01.jpg" alt="paikNam">
+                </div>
+                <div class="content-details">
+                  <h3>Nam June Paik, Canopus, 1989, from the series Planetarium, 1990, single-channel video sculpture; 6 monitors, 1 laserdisc, 1 laserdisc player, ca. 86 cm in diameter, collection: ZKM | Center for Art and Media  © ZKM | Zentrum für Kunst und Medien, photo: Steffen Harms</h3>
+                  <p>The video sculpture Canopus, consisting of six monitors grouped around a hubcap bearing written characters, is part of Nam June Paik's 'Planetarium' series. This, produced in 1989-90, consists of nine symmetrical works with the names of the fixed stars, the nine planets, the sun and the moon. Canopus is the second brightest star in the sky and has served since Antiquity as a point ofreference in navigation. Paik's Canopus, a unique piece which nonetheless has the character of a multiple and comes from a series ofvideo reliefs, is an artistic 'celestial body' that finds its place in the context of a museum. It can be understood as a 'missing link', related both to the still steadily growing 'Family of Robot' series (on which Paik embarked in 1986), and to the artist's numerous satellite projects, in which he uses global communications technology to pursue artistic strategies. Canopus is an art satellite, full to the brim with all manner of information and promising an intoxicating flood of images. Simultaneously, it alludes to space as the context for the satellite-supported transmission of information. Paik's 'Planetarium series has created a curious and novel form of man-made "planets" establishing a link between sculpture and action, between individuality and stereotype, between the individual museum object and the multiple.</p>
+                  <br>
+                  <a href="https://www.zkm.de" target="_blank">🔗 www.zkm.de</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="36" data-single-to-multi="27" data-az="15" data-year="2018">
+            <div class="artist-container" id="Fieres">
+              <p class="modal-trigger" onclick="modalOpen('Fieres-modal')">Ornella Fieres, The Alchemist / On Guard / Behind the Lens, 2018</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/264023802?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Fieres-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Fieres-modal')"> &times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Fieres/01.jpg" alt="Fieres" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Fieres/02.jpg" alt="Fieres" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Fieres/03.jpg" alt="Fieres" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Fieres/04.jpg" alt="Fieres" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Ornella Fieres, The Alchemist / On Guard / Behind the Lens, 2018, video installation, computer screens, Photo: Marcus Schneider, Courtesy SEXAUER Gallery</h3>
+                  <p>For the video installation The Alchemist / On Guard / Behind the Lens Ornella Fieres filmed computer screens showing early 20th century documentaries on computer-based data acquisition, the invention of slow motion and the chemistry of photography. She then slowed down these recordings by over a thousand times, adding an algorithm which was set to calculate where the video’s pixels would move to in the next frame. The outcome is full of unpredictable interferences, mysterious artifacts and emanating a droning, muffled sound.</p>
+                  <br>
+                  <a href="https://ornellafieres.com" target="_blank">🔗 ornellafieres.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="37" data-single-to-multi="14" data-az="34" data-year="2019">
+            <div class="artist-container" id="Rodriguez">
+              <p class="modal-trigger" onclick="modalOpen('Rodriguez-modal')">Allison Maria Rodriguez, Legends Breathe: By Her Command, 2019 - ongoing</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/425228959?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Rodriguez-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Rodriguez-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Rodriguez/01.jpg" alt="Rodriguez" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Rodriguez/02.jpg" alt="Rodriguez" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Rodriguez/03.jpg" alt="Rodriguez" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Allison Maria Rodriguez, Legends Breathe: By Her Command, 2019 - ongoing, video sculpture, screen, wooden box, 7" x 11.5" x 7" © the artist</h3>
+                  <p>Legends Breathe is an ongoing project that celebrates the power of creativity and the imagination in overcoming traumatic experiences. Based on interviews with different female-identified and non-binary artists about childhood fantasies that assisted them in overcoming trauma, Rodriguez creates a video in response to each interview, exploring that particular fantasy as well as developing a unique site-responsive installation. Legends Breathe: By Her Command is displayed as an intimate handmade wooden keepsake box or treasure chest that holds the video within it as a precious object.</p>
+                  <br>
+                  <a href="https://allisonmariarodriguez.com" target="_blank">🔗 allisonmariarodriguez.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="38" data-single-to-multi="15" data-az="40" data-year="2002">
+            <div class="artist-container" id="Truckenbrod">
+              <p class="modal-trigger" onclick="modalOpen('Truckenbrod-modal')">Joan Truckenbrod, Quantum Realities, 2002</p>
+              <video loading="lazy" src="images/Truckenbrod/video1.mov" controls></video>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Truckenbrod-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Truckenbrod-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Truckenbrod/01.jpg" alt="Truckenbrod" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Truckenbrod/02.jpg" alt="Truckenbrod" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Truckenbrod/03.jpg" alt="Truckenbrod" max-width="100%" height="auto" style="display: none;">
+                  <video loading="lazy" class="slides" src="images/Truckenbrod/video1.mov" alt="Truckenbrod" max-width="100%" height="auto" style="display: none;">This video is not available</video>
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Joan Truckenbrod, Quantum Realities, 2002, Multi-Media Installation © the artist</h3>
+                  <p>This installation creates a palpable experience of wild salmon runs, with awareness of their diminishing population. Industrial and agricultural chemicals running into streams and rivers, have compromised the quality of salmon habitat, consequently reducing their population. This parallels health issues for people, including cancers also caused by environmental chemicals. In addition warming of the water in these waterways, together with warming oceans due to climate change, have created difficulties for salmon. Video of salmon runs and the life cycle of salmon were captured in Alaska and the Northwest, and projected into a water pond surrounded by river black pebbles.</p>
+                  <br>
+                  <a href="https://joantruckenbrod.com" target="_blank">🔗 joantruckenbrod.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="39" data-single-to-multi="29" data-az="26" data-year="2019">
+            <div class="artist-container" id="Muller">
+              <p class="modal-trigger" onclick="modalOpen('Muller-modal')">Sali Muller, Wolkenbilder, 2019</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/427836059?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Muller-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Muller-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Muller/01.jpg" alt="Muller" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Muller/02.jpg" alt="Muller" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Muller/03.jpg" alt="Muller" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Muller/04.jpg" alt="Muller" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Sali Muller, Wolkenbilder, 2019, video, screens, dimensions: variable © the artist</h3>
+                  <p>The perceptual meanings of now, later or (in)finiteness shift and intensify - on the outside still real and now, inside a confined space, surreal cloud formations in always identical, repetitive and never ending movements. The new cloud images transform the space into a magically sensual projection landscape. They are reminiscent of the master of deception, René Magritte who was deeply involved in the perception of reality in his work, trying to expose the invisible through sight and thinking: to see things differently. In this way, Muller directs the view behind the light-reflecting surfaces and motifs. With the multi-part medial floor installation, the general viewing habits are lifted. There is a change of perspective from above and below, in which not only the room situation is renegotiated. The supposed mirror image in the usual reflective surface disappears behind the clouds. At the same time, the floor opens and connects the here and now with the imagination behind it.</p>
+                  <br>
+                  <a href="http://salimuller.com" target="_blank">🔗 salimuller.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="40" data-single-to-multi="44" data-az="9" data-year="2016">
+            <div class="artist-container" id="Cooley">
+              <p class="modal-trigger" onclick="modalOpen('Cooley-modal')">Kevin Cooley, Fallen Water, 2016</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/238134065?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>    
+          <div class="modal-wrapper" id="Cooley-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Cooley-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Cooley/01.jpg" alt="Cooley" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Cooley/02.jpg" alt="Cooley" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Cooley/03.jpg" alt="Cooley" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Kevin Cooley,  Fallen Water, 2016, 32 channel video installation © the artist</h3>
+                  <p>Fallen Water – Niagara Escarpment brings our attention to the worsening global freshwater crisis through an exploration of local waterfalls and waterways flowing towards Lake Ontario. Separate videos on each of the 32 video screens that form this towering structure display a small video vignette from individual waterfalls along the geologic formation known as the Niagara Escarpment. Videos from Eugenia, Webster, Decew, Niagara Falls, and many others, coalesce into a video and sound installation in the central corridor of Brookfield Place in downtown Toronto. The project ultimately reflects upon the disparate and widespread origin of the province of Ontario's water which makes up one-fifth of the world's remaining fresh water.</p>
+                  <br>
+                  <a href="http://kevincooley.net" target="_blank">🔗 kevincooley.net</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="41" data-single-to-multi="45" data-az="14" data-year="2019">
+            <div class="artist-container" id="Fake">
+              <p class="modal-trigger" onclick="modalOpen('Fake-modal')">Stefano Fake, Memory and Desire, 2019</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://player.vimeo.com/video/358376162?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Fake-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Fake-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Fake/01.jpg" alt="Fake" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Fake/02.jpg" alt="Fake" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Fake/03.jpg" alt="Fake" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Stefano Fake, Memory and Desire, 2019, mixed media sculpture © the artist</h3>
+                  <p>The mixed media sculpture created by Stefano Fake puts us in front of the cyclical nature of creation and the contradiction of every moment of rebirth, which combines the memory of the past with the desire for a new life.The work is a “technological tree” whose elements are the analogue and digital reproduction media storages of the past, from cinematographic film to magnetic tapes. A representation of all the creative processing media used in the past by Stefano Fake in his installations. In the monitors we find reproductions of ancient art when it undergoes a digital transformation. And therefore the work symbolically represents this passage from the "memory" of classical art with the "desire" to transform it into a new digital art, with the aim also of keeping the memory alive thanks to the infinite reproduction that digital allows. The work was commissioned and created for the first time thanks to the support of Salvatore Ferragamo Parfums, on the occasion of the "Envisioning the Future" exhibition, at Palazzo Corsini in Florence.</p>
+                  <br>
+                  <a href="http://stefanofake.art" target="_blank">🔗 stefanofake.art</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="42" data-single-to-multi="26" data-az="12" data-year="2020">
+            <div class="artist-container" id="Everett">
+              <p class="modal-trigger" onclick="modalOpen('Everett-modal')">Daniel Everett, Subway, 2020</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://www.youtube.com/embed/Jo1W2VPUouw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>    
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Everett-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Everett-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Everett/01.jpg" alt="Everett" max-width="100%" height="auto" style="display: block;">
+                </div>
+                <div class="content-details">
+                  <h3>Daniel Everett, Subway, 2020, screens, scaffolding © the artist</h3>
+                  <p>My work explores the potential for meaning within the banality of our modern landscape. I’m interested in the divide between an idealized vision of progress and the physical reality of the structures and objects left in its wake. In my work I tend to embrace blandness and uniformity as both a subject matter and an aesthetic value. Within a broader exploration of anonymous space, I use my art as a way of sorting through my ambivalence towards the ideals of order and perfection.</p>
+                  <br>
+                  <a href="https://daniel-everett.com" target="_blank">🔗 daniel-everett.com"</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+          data-curator-choice="43" data-single-to-multi="25" data-az="10" data-year="2019">
+            <div class="artist-container" id="Darilmaz">
+              <p class="modal-trigger" onclick="modalOpen('Darilmaz-modal')">D'arcy Darilmaz, #rip, 2019</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://www.youtube.com/embed/WfZ-C4FUZtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Darilmaz-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Darilmaz-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Darimaz/01.jpg" alt="Darilmaz" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Darimaz/02.jpg" alt="Darilmaz" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Darimaz/03.jpg" alt="Darilmaz" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Darimaz/04.jpg" alt="Darilmaz" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>D'arcy Darilmaz, #rip, 2019, video sculpture, mobile phone and tablet © the artist</h3>
+                  <p>The video sculpture #rip (2019) explores a strange relationship between digitality and memorialisation, focusing specifically on the grave of Andy Warhol in Pittsburgh, USA, which is screened 24/7 on EarthCam.com, and the peculiar culture of selfie-taking and family photo-posing that surrounds the gravesite. The connection between the physical pilgrimage to the grave and the digital communication of those experiences is considered through the videos presented on a mobile phone and tablet. Using found footage, videos collected through long-distance connections, and imagery accumulated from social media, the work attempts to convey the fast-paced nature of the technology alongside quieter, more reflective moments at the site which is simultaneously a physical, intimate space and a fluid, pixelated digital transmission on a screen.</p>
+                  <br>
+                  <a href="https://darcydarilmaz.wixsite.com/darcydarilmaz/rip-installation" target="_blank">🔗  darcydarilmaz.wixsite.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+          data-curator-choice="44" data-single-to-multi="43" data-az="3" data-year="2017">
+            <div class="artist-container" id="Balve">
+              <p class="modal-trigger" onclick="modalOpen('Balve-modal')">Frank Balve, The Hide, 2017</p>
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://www.youtube.com/embed/70TzYKsSA3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Balve-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Balve-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Balve/01.jpg" alt="Balve" max-width="100%" height="auto" style="display: block;">
+                  <img loading="lazy" class="slides" src="images/Balve/02.jpg" alt="Balve" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Balve/03.jpg" alt="Balve" max-width="100%" height="auto" style="display: none;">
+                  <img loading="lazy" class="slides" src="images/Balve/04.jpg" alt="Balve" max-width="100%" height="auto" style="display: none;">
+                  <a class="prev">❮</a>
+                  <a class="next">❯</a>
+                </div>
+                <div class="content-details">
+                  <h3>Frank Balve, The Hide, 2017, large-scale media installation, wood, textile, barb wire © the artist</h3>
+                  <p>The work is a large-scale media installation composed of two sculptural elements, one of which is a free-floating barrel consisting of 30 equal-sized TVs. These are linearly arranged in groups of three around the barrel, like the windows of a slot machine. Displayed are rotating gambling symbols (lemon, melon, the number 7, etc.) and staccato light passages. The wheel is 2 x 2 meters. The second element is a doll, situated in a corner on the floor. Its color matches that of the wheel. The doll is 1.80 x 0.60 meters. The sculptures and statues are accompanied by a sound installation. This sound collage consists of gaming operation sounds from casinos. The subject of gambling is the starting point for the sound installation. Frank Balve explores the aspect of gambling and its effect on operators and visitors (addiction). An additional topic he addresses is the veneer of society and diversion of historical facts.</p>
+                  <br>
+                  <a href="https://frankbalve.de/the-hide/" target="_blank">🔗 frankbalve.de</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering right" data-aos="fade-left"
+            data-curator-choice="45" data-single-to-multi="41" data-az="2" data-year="2019">
+            <div class="artist-container" id="Bainbridge">
+              <p class="modal-trigger" onclick="modalOpen('Bainbridge-modal')">Bainbridge Benton, Fake Flag, 2019</p>        
+              <div class="videoWrapper">
+                <iframe loading="lazy" src="https://www.youtube.com/embed/uBMYA3Gc1tE?title=0&byline=0&portrait=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="modal-wrapper" id="Bainbridge-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('Bainbridge-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" src="images/Bainbridge/01.jpg" alt="Bainbridge" width="600" height="auto">
+                </div>
+                <div class="content-details">
+                  <h3>Video sculpture (CRT monitors, media players, cables & adapters) Singular Edition</h3>
+                  <p>Benton C Bainbridge’s video sculpture Fake Flag (a.k.a. AImurica) is, in the words of the artist, “a multichannel media artwork that evokes the U.S. flag with low-resolution, analog image-processed video. The electronic ‘flag’ teeters on the edge of recognizability, much like our country.”Fake Flag's abstractions were made with analog synthesizer logic circuits. Bainbridge says: "the work reflects my anger, my fear and confusion as so many Americans cheer the greedy usurpers who wish to transform this nation into a fascist oligarchy ruled with algorithms.</p>
+                  <br>
+                  <a href="https://www.bentoncbainbridge.com" target="_blank">🔗 bentoncbainbridge.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filtering left" data-aos="fade-right"
+            data-curator-choice="46" data-single-to-multi="40" data-az="44" data-year="1981">
+            <div class="artist-container" id="Vostell">
+              <p class="modal-trigger" onclick="modalOpen('vostell-modal')">Wolf Vostell, The Winds, 1981</p>
+              <img loading="lazy" src="images/Vostell/01.jpg" alt="Vostell">
+            </div>
+          </div>
+          <div class="modal-wrapper" id="vostell-modal">
+            <div class="modal-window">
+              <span class="close-button" onclick="modalClose('vostell-modal')">&times;</span>
+              <div class="modal-container">
+                <div class="artwork">
+                  <img loading="lazy" class="slides" src="images/Vostell/01.jpg" alt="Vostell" max-width="100%" height="auto" style="display: block;">
+                </div>
+                <div class="content-details">
+                  <h3>Wolf Vostell, The Winds, 1981, Car-TV-sculpture © The Wolf Vostell Estate</h3>
+                  <p>The Winds encompasses an old luxury limousine, model Mercedes Benz 600, containing 20 television monitors built into the roof, trunk and hood of the car. A camera mounted in the vehicle, next to the steering wheel, films the visitor, whose image is shown 20 times on these screens. In the front, in place of the radiator, a large television set shows programming from one of Germany's state broadcasting stations. Vostell describes the theme as “sensory overload through the media.</p>
+                  <br>
+                  <a href="https://www.vostell.de" target="_blank">🔗 www.vostell.de</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+          <!-- end video section   -->
+        <a class="arrow-up" id="top" title="Go to top" onclick="goTop()">
+          <span class="left-arm"></span>
+          <span class="right-arm"></span>
+          <span class="arrow-slide"></span>
+        </a>
+      </div>
+      <footer>
+        <p>©2021 peertospace</p>
+      </footer>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+  <script type="text/javascript" src="javascript/starfield.js"></script>
+  <script type="text/javascript" src="javascript/index.js"></script>
+  <script type="text/javascript" src="javascript/modal.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>
